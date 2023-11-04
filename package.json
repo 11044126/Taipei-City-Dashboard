@@ -4,12 +4,10 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
-		"start": "vite",
-		"dev": "vite",
-		"build": "eslint --fix --ext .js,.vue . && vite build",
-		"lint": "eslint --fix --ext .js,.vue . && cd public && tar zcfv mapData.tar.gz mapData && cd .",
-		"test": "vitest run --dom",
-		"preview": "vite preview"
+		"test": "echo \"Error: no test specified\" && exit 1",
+    		"dev": "webpack-dev-server",
+    		"dev:server": "nodemon server.js",
+    		"dev:watch": "gulp watch"
 	},
 	"dependencies": {
 		"@vueuse/core": "^10.1.2",
